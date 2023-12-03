@@ -120,7 +120,7 @@ display:none;
 
 .intro-image{
 background:green;
-background-image:url(https://images.unsplash.com/photo-1462759353907-b2ea5ebd72e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+background-image:url(https://cdn.dribbble.com/users/2248598/screenshots/11376342/poliakova_m_01_4x.jpg);
 background-size:100% 100%;
 height:70vh;
 }
@@ -417,7 +417,7 @@ background:#FFE95C;
 
 /*the large cove-image of the website*/
 .intro-image{
-background-image:url(https://s3-us-west-2.amazonaws.com/files.catholicworldreport.com/2018/06/hobbitset_unsplash-675x381.jpg);
+ background-image:url(https://cdn.dribbble.com/users/2248598/screenshots/11376342/poliakova_m_01_4x.jpg);
   background-size:100% 100%;
 height:80vh;
 }
