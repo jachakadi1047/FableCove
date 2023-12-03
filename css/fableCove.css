@@ -1,0 +1,653 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*mobile script*/
+*{
+ box-sizing:border-box;
+}
+/*giving a background color and height to the header*/
+header{
+padding:0.5em;
+background:#291711;
+position:fixed;
+width:100vw;
+height:7vh;
+
+}
+/*the logo of fable cove comes here.It is floated to the left*/
+header p{
+display:inline-block;
+height:5vh;
+  font-family:bellove;
+  color:#fbfff1;
+float:left;
+  font-size:1.5em;
+}
+/*this is the css for dropbutton div*/
+.dropbtn{
+text-align:center;
+width:10vw;
+margin:1em;
+margin-top:0em;
+padding:0.3em;
+color:#291711;
+background:#F9FFEB;
+display:inline-block;
+float:right;
+border:solid 1px;
+-webkit-border-radius:2.5px;
+-moz-border-radius:2.5px;
+-o-border-radius:2.5px;
+-ms-borer-radius:2.5px;
+border-radius:2.5px;
+}
+/*the dropdown list with block display*/
+.dropdown-content a{
+  font-family:"ink free";
+background:#291711;
+  color:#F9FFEB;
+text-decoration:none;
+  display:block;
+padding:0.5em;
+font-variant:small-caps;
+}
+/*spacing the icon and the link*/
+.dropdown-content i{
+  margin-right:0.2em;
+}
+/*Changes backgroundcolor when hovered over*/
+.dropdown-content a:hover{
+background:#484848;
+}
+/*changes bgcolor of button when hovered over*/
+.dropbtn:hover{
+opacity:0.7;
+}
+
+/*styling nav block of navigation links*/
+.dropdown-content{
+text-align:center;
+position:fixed;
+top:7vh;
+height:7vh;
+width:100vw;
+display:none;
+}
+/*the large cove-image of the website*/
+
+.intro-image{
+background:green;
+background-image:url(https://images.unsplash.com/photo-1462759353907-b2ea5ebd72e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+background-size:100% 100%;
+height:70vh;
+}
+
+
+/*the collective css for introductory paragraphs and other sections*/
+.content
+{ font-family:"ink free";
+padding:2em 3em;
+overflow:auto;
+background:#fbfff1;
+}
+.content h2,h1{
+  font-weight:bold;
+ font-size:1.8em;
+padding:0.5em;
+text-align:center;
+  font-family:"ink free";
+}
+.content p
+{ 
+ font-size:1.15em;
+ margin:0.5em;
+ padding:0.2em;
+ 
+}
+/*for expplore links throught the page*/
+.content>a{
+  font-weight:bold;
+  font-size:1.1em;
+text-decoration:none;
+display:block;
+/*height:5vh;*/
+width:auto;
+padding:0.5em;
+margin:0.9em;
+text-align:center;
+background:#ef233c;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+-o-border-radius:2px;
+-ms-border-radius:2px;
+border-radius:2px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*changes color of the xplore page links*/
+.content>a:hover{
+background:#F25467;
+}
+/*specifically for the introductory paragraph*/
+#description
+{
+height:auto;
+ color:#080705;
+background:#fbfff1;
+overflow:hidden;
+}
+#description a{
+  color:#010400;
+ }
+#discussion a
+{
+  color:#080705;
+  font-size:1.08em;
+}
+/*specificsly for the genres*/
+#genre{
+  background:#fbfff1;
+  color:#0A2342;
+ }
+/*to center just the paragraph in the genre section*/
+#genre p{
+  text-align:center;
+	font-size:1.08em;
+}
+/*specificaly for link containers' divs*/
+.Card-Links{
+  background:#0A2342;
+  color:#FBFFF1;
+  
+}
+
+
+
+/*for the genre cards*/
+.card-container{
+background:#db3069;
+height:30vh;
+  width:45vw;
+margin:18%;
+margin-top:0.5em;
+margin-bottom:1.5em;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+-o-border-radius:4px;
+-ms-borer-radius:4px;
+border-radius:4px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-image{
+background:#fff;
+height:55%;
+}
+.card-image img{
+  height:100%;
+  width:100%;
+  border-radius:3px 3px 0 0;
+}
+.card-details{
+  font-weight:bold;
+text-align:center;
+padding:0.5em;
+color:#fbfff1;
+height:20%;
+}
+.card-caption{
+height:25%;
+text-align:center;
+padding:0.8em;
+}
+.card-caption a{
+  font-weight:bold;
+  text-decoration:none;
+margin-top:0.3em;
+padding:0.45em;
+   background:#fbfff1;
+  color:#383F51;
+ border:solid 0.1px #fbfff1;
+-webkit-border-radius:2.5px;
+-moz-border-radius:2.5px;
+-o-border-radius:2.5px;
+-ms-border-radius:2.5px;
+border-radius:2.5px;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+
+}
+.card-caption a:hover{
+background:#EBDCCB;
+}
+
+/*for different link containers of geatures and latest post sections*/
+.link-container{
+ background:#F4F7BE;
+padding:0.3em;
+margin:1.5em;
+-webkit-border-radius:2.5px;
+-moz-border-radius:2.5px;
+-o-border-radius:2.5px;
+-ms-borer-radius:2.5px;
+border-radius:2.5px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.link-container a{
+text-decoration:none;
+  font-weight:bold;
+  background:#EF6F6C;
+  color:#410B13;
+  display:inline-block;
+margin:0.2em 0.3em;
+padding:0.5em;
+border:solid 2px #EF6F6C;
+text-align:center;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+-o-border-radius:4px;
+-ms-borer-radius:4px;
+border-radius:4px;
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+
+}
+
+.main-link{
+margin:0.2em 0;
+display:block;
+background:#56E39F;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+-o-border-radius:2px;
+-ms-borer-radius:2px;
+border-radius:2px;
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+
+}
+.main-link a{
+  border:none;
+  background:none;
+  box-shadow:none;
+}
+/*discussion thread of the page*/
+li a{
+display:block;
+border:solid 1px #F1E8B8;
+padding:0.5em;
+margin:0.5em;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+-o-border-radius:2px;
+-ms-borer-radius:2px;
+border-radius:2px;
+}
+/*changes color when hovered over*/
+li a:focus{
+background:#F1E8B8;
+}
+
+/*the footer of the page*/
+footer{
+background:#FBFFF1;
+text-align:center;
+}
+footer div{
+font-size:1.3em;
+padding:1em;
+}
+footer div a{
+color:#011936; 
+  font-weight:bold;
+  font-family:"ink free";
+  text-decoration:none;
+}
+footer div p{
+   font-weight:bold;
+color:#011936;
+  font-family:"ink free"; 
+margin-bottom:1em;
+}
+footer div i{
+margin:0 0.5em;
+}
+
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-MediaQuery-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+@media screen and (min-width:1000px){
+  *{
+ 	box-sizing:border-box;
+   }
+/*giving a background color and height to the header*/
+	header{
+	padding:0.5em;
+	background:#7CFEF0;
+	background:#C05746;
+  	background:#F9FFEB;
+	position:fixed;
+	width:100vw;
+	height:7vh;
+
+	}
+/*the logo of fable cove comes here.It is floated to the left*/
+	header p{
+display:inline-block;
+height:5vh;
+  font-family:bellove;
+  color:#db3069;
+float:left;
+  font-size:2.3em;
+}
+
+/*this is the css for dropbutton div*/
+	.dropbtn{
+	display:none;
+	}
+/*the dropdown list with block display*/
+	.dropdown-content{
+	  background:#291711; 
+	  display:block;
+	  text-align:center;
+	  position:fixed;
+	  top:7vh;
+	  height:7vh;
+	  width:100vw; 
+	}
+.dropdown-content a{
+background:#F8D700;
+text-decoration:none;
+  color:#291711;
+font-weight:bold;
+margin:0.3em 2em;
+display:inline-block;
+padding:0.5em;
+font-variant:small-caps;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -o-border-radius:2px;
+  -moz-border-radius:2px;
+  -ms-border-radius:2px;
+  -webkit-border-radius:2px;
+  boder-radius:2px;
+}
+/*Changes backgroundcolor when hovered over*/
+.dropdown-content a:hover{
+background:#FFE95C;
+}
+
+/*the large cove-image of the website*/
+.intro-image{
+background-image:url(https://s3-us-west-2.amazonaws.com/files.catholicworldreport.com/2018/06/hobbitset_unsplash-675x381.jpg);
+  background-size:100% 100%;
+height:80vh;
+}
+
+
+/*the collective css for introductory paragraphs and other sections*/
+.content
+{
+padding:2em 3em;
+overflow:auto;
+background:#fbfff1;
+height:auto;
+text-align:center;
+}
+.content h2,h1{
+ font-size:2.2em;
+ padding:0.5em;
+ text-align:center;
+}
+.content p
+{ 
+ font-size:1.5em;
+ margin:0.5em;
+ padding:0.2em;
+ 
+}
+/*for expplore links throught the page*/
+.content>a{
+text-decoration:none;
+display:inline-block;
+/*height:7vh;*/
+width:auto;font-size:1.2em;
+padding:1em;
+margin:2em;
+text-align:center;
+background:#ef233c;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+-o-border-radius:3px;
+-ms-border-radius:3px;
+border-radius:3px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*changes color of the xplore page links*/
+.content>a:hover{
+background:#F25467;
+}
+/*specifically for the introductory paragraph*/
+#description
+{
+  height:auto;
+  color:#080705;
+  background:#fbfff1;
+  overflow:hidden;
+}
+#description a{
+  color:#010400;
+ }
+#discussion a
+{
+  color:#080705;
+}
+/*specificsly for the genres*/
+#genre{
+  background:#fbfff1;
+  color:#0A2342;
+}
+/*specificaly for link containers' divs*/
+.Card-Links{
+  background:#0A2342;
+  color:#FBFFF1;
+}
+/*for the genre cards*/
+.card-container{
+display:inline-block;
+background:#db3069;
+height:45vh;
+width:20vw;
+border:solid 0.5px #db3069; 
+margin:5%;
+margin-top:2%;
+margin-bottom:3%;
+-webkit-border-radius:4.5px;
+-moz-border-radius:4.5px;
+-o-border-radius:4.5px;
+-ms-borer-radius:4.5px;
+border-radius:4.5px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-image{
+background:white; 
+height:55%;
+}
+.card-details{
+text-align:center;
+padding:0.5em;
+  color:#fbfff1;
+height:20%;
+  font-size:1.2em;
+}
+.card-caption{
+height:25%;
+text-align:center;
+padding:0.8em;
+}
+.card-caption a{
+  color:#383F51;
+  text-decoration:none;
+  background:#fbfff1;
+  font-size:1.1em;
+  border:solid 0.5px #fbfff1;
+  margin-top:0.3em;
+padding:0.5em;
+-webkit-border-radius:2.5px;
+-moz-border-radius:2.5px;
+-o-border-radius:2.5px;
+-ms-border-radius:2.5px;
+border-radius:2.5px;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+}
+.card-caption a:hover{
+background:#EBDCCB;
+}
+
+
+/*for different link containers of geatures and latest post sections*/
+.link-container{
+display:inline-block;
+height:10vw;
+background:#F4F7BE;
+padding:0.3em;
+margin:1.5em;
+-webkit-border-radius:2.5px;
+-moz-border-radius:2.5px;
+-o-border-radius:2.5px;
+-ms-borer-radius:2.5px;
+border-radius:2.5px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.link-container a{
+  color:#0d1b2a;
+  font-size:1.2em;
+  text-decoration:none;
+  background:#EF6F6C;
+  display:inline-block;
+margin:0.2em 0.3em;
+padding:0.5em;
+border:solid 2px #EF6F6C;
+text-align:center;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+-o-border-radius:4px;
+-ms-borer-radius:4px;
+border-radius:4px;
+box-shadow: 0 1.5px 2.5px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+
+}
+.main-link a{
+  border:none;
+  background:none;
+  box-shadow:none;
+}
+.main-link{
+margin:0.2em 0;
+display:block;
+background:#56E39F;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+-o-border-radius:2px;
+-ms-borer-radius:2px;
+border-radius:2px;
+box-shadow: 0 1.5px 2.5px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+
+}
+
+/*discussion thread of the page*/
+li{
+  display:inline-block;
+}
+li a{
+  font-size:1.2em;
+ display:inline-block;
+color:#fff;
+padding:0.5em;
+margin:0.5em;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+-o-border-radius:2px;
+-ms-borer-radius:2px;
+border-radius:2px;
+}
+/*changes color when hovered over*/
+li a:hover{
+background:#F1E8B8;
+}
+
+/*the footer of the page*/
+footer{
+background:#FBFFF1;
+text-align:center;
+  
+}
+footer div{
+display:inline-block;
+  width:30vw;
+  height:10vh;
+font-size:1.3em;
+padding:1em;
+  
+}
+footer div a{
+color:#011936;
+  text-decoration:none;
+}
+footer div a:hover{
+  text-decoration:underline;
+}
+footer div p{
+color:#011936;
+  display:inline;
+margin-bottom:1em;
+}
+footer div i{
+margin:0.3em;
+}
+
+
+}
+
+/*the class that is toggled to have a clickable dropdown menu*/
+.show {display: block;}
+
